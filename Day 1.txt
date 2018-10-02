@@ -1,0 +1,7 @@
+Image recognisation :
+cat vs dog
+downloaded data from kaggle.
+installed tensorflow in base directpry using anaconda prompt
+after many attempts and started preprocess the data 
+Refer: screensots in picture folder
+

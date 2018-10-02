@@ -1,0 +1,3 @@
+loading and shuffling the data randomly to predict correctly
+
+image preloader funtion to load images on the fly
