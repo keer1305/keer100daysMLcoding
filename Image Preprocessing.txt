@@ -1,0 +1,30 @@
+#importing necessary packages
+import numpy as np
+import matplotlib.pyplot as plt 
+import tensorflow as tf
+import tflearn
+import tensorflow as tf
+from PIL import Image
+%matplotlib inline
+#for writing text files
+import glob
+import os     
+import random 
+#reading images from a text file
+from tflearn.data_utils import image_preloader
+from tflearn.data_utils import build_hdf5_image_dataset
+
+
+IMAGE_FOLDER = 'C:/Users/Faster/Desktop/CatVsDog-ImageRecognization/train'
+TRAIN_DATA = 'C:/Users/Faster/Desktop/CatVsDog-ImageRecognization/training_data.txt'
+TEST_DATA = 'C:/Users/Faster/Desktop/CatVsDog-ImageRecognization/test_data.txt'
+VALIDATION_DATA = 'C:/Users/Faster/Desktop/CatVsDog-ImageRecognization/validation_data.txt'
+train_proportion=0.7
+test_proportion=0.2
+validation_proportion=0.1
+
+#read the image directories
+filenames_image = os.listdir(IMAGE_FOLDER)
+#shuffling the data is important otherwise the model will be fed with a single class data for a long time and 
+#network will not learn properly
+random.shuffle(filenames_image)
