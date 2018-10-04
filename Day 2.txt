@@ -1,3 +1,3 @@
-loading and shuffling the data randomly to predict correctly
-
-image preloader funtion to load images on the fly
+Understandning of data and tensorflow architecture
+configuring the environment in desktop
+Referred to CNN network papers and articles
