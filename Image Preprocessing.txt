@@ -28,3 +28,4 @@ filenames_image = os.listdir(IMAGE_FOLDER)
 #shuffling the data is important otherwise the model will be fed with a single class data for a long time and 
 #network will not learn properly
 random.shuffle(filenames_image)
+
